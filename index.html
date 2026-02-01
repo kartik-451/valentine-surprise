@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Valentine 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div id="page1" class="page active">
+    <h1 class="title">Hey my little cootie poii 💕</h1>
+    <button class="start-btn" onclick="goToPage2()">Let's begin the game 💗</button>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+    <h1 class="question">Will you be my Valentine? 💘</h1>
+
+    <div class="card">
+        <button class="yes-btn" onclick="yesClicked()">YES 💖</button>
+        <button class="no-btn" id="noBtn">no</button>
+    </div>
+
+    <!-- Falling hearts container -->
+    <div id="celebration"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
