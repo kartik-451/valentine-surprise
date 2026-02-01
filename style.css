@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+body {
+    height: 100vh;
+    background: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Pages */
+.page {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.page.active {
+    display: flex;
+}
+
+/* Page 1 */
+.title {
+    font-size: 3rem;
+    color: #ff2f92;
+    margin-bottom: 40px;
+}
+
+.start-btn {
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background: #ff69b4;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.start-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Page 2 */
+.question {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #ffe6f0;
+    padding: 50px;
+    border-radius: 20px;
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+/* Yes Button */
+.yes-btn {
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    background: #ff1493;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* No Button */
+.no-btn {
+    width: 50px;
+    height: 28px;
+    font-size: 0.8rem;
+    background: white;
+    border: 1px solid gray;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    cursor: pointer;
+    transition: left 0.25s ease;
+
+}
+
+/* Falling hearts */
+.heart {
+    position: fixed;
+    top: -20px;
+    font-size: 24px;
+    animation: fall 4s linear infinite;
+}
+
+.love-text {
+    position: fixed;
+    top: -30px;
+    font-size: 22px;
+    color: #ff1493;
+    font-weight: bold;
+    animation: fall 5s linear infinite;
+    white-space: nowrap;
+}
+
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
